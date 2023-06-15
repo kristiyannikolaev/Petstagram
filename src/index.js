@@ -31,4 +31,4 @@ app.use(routes);
 
 
 
-app.listen(PORT, console.log(`Server is lsitening on port ${PORT}...`));
+app.listen(process.env.PORT || PORT, console.log(`Server is lsitening on port ${PORT}...`));
