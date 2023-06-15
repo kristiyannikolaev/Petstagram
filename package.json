@@ -1,0 +1,23 @@
+{
+  "name": "skeleton",
+  "version": "1.0.0",
+  "description": "1. Initialize project and structure\r 2. Set up dev environmnet\r 3. Istall and set up express\r     * add static middleware\r     * add body parser\r     * add routes\r 4. Add static resources\r 5. Add view folder with ready htmls\r 6. Add express-handlebars view engine\r     * install\r     * add to express\r     * config extension\r     * config views folder\r     * add main layout\r     * add partials (optional)\r     * fix static paths\r     * render home page\r 7. Add controllers folder with home controller\r 8. Add database\r     * install mongoose\r     * connect database\r 9. Authentication \r     * add user controller\r     * add controller to routes\r     * fix header navigation to login, register and logout\r     * render login page\r     * render register page\r 10. Add user model\r     * add unique index for username\r     * validate repeat password\r 11. Modify login and register form\r 12. Add login and register post actions\r 13. Add user manager\r     * require in user controller\r     * add register method\r     * validate if user already exists\r 14. Hash password\r     * insatll bcrypt\r     * hash password\r 15. Login \r     * FInd user by username\r     * Validate password with hash\r 16. Generate jwt token\r     * install jsonwebtoken\r     * promisify jsonwebtoken\r     * create secret\r     * generate token in manager.login\r 17. Return token in cookie\r     * install cookie parser\r     * config cookie parser\r     * set cookie with token\r 18. Logout\r 19. Authentication middleware\r     * create base middleware\r     * use middleware\r     * implement auth middleware\r     * attach decoded token to request\r     * handle invalid token\r 20. Authorization middleware\r 21. Dynamic navigation\r     * add conditional in main layout\r     * add to res locals\r 22. Error handling\r     * add 404 page\r     * add global error handler\r 23. Show error notifications\r     * add error container to main layout\r     * show error container conditionally \r     * pass error to render",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.4"
+  }
+}
